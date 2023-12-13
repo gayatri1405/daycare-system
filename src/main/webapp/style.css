@@ -1,0 +1,240 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:visited {
+  color: #666;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #ff6f00;
+}
+
+.hero {
+  background-image: url('daycare2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  padding: 0px ;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-top: -150px;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ff6f00;
+  color: #fff;
+  padding: 0px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  animation: bounce 0.5s infinite;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+ 
+}
+
+
+.a{
+  color: black;
+  border-color:orange;
+  border-style: dotted ;
+  border-width: medium;
+  width:90%;
+  margin: auto;
+}
+.b{
+   background-image: url('promise.png');
+   background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.feature {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.feature img {
+  width: 150px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.testimonial {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.testimonial-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.quote blockquote {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.quote cite {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.textp{
+font-size: 20px;
+margin-top: 50px;
+}
+.Personlized{
+  width: 70%;
+  height: 400px;
+  border-color: orange;
+  border-style: dotted;
+   border-width: medium;
+   margin: auto;
+   margin-top: 10%;
+}
+.activity{
+  margin-top: -220px;
+}
+.pp{
+  background-color: orange;
+  border-radius: 20px;
+  size: 50%;
+}
+.safe{
+  background-color: orange;
+   border-radius: 20px;
+}
+.slideshow-container {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: slideShow 3s infinite;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slideShow {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  53.33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.text-center {
+    text-align: center!important;
+}
+.col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.container{
+
+  margin-top: 10%;
+  border-style: dotted;
+  border-color: orange;
+   border-width: medium;
+   margin: auto;
+   margin-top: 10%;
+}

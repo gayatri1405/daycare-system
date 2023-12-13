@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enrollment Form - ABC Daycare</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .nav{
+		width: 120%;
+
+		height: 80px;
+		 display: flex;
+		 background: linear-gradient(135deg, #71b7e6, #9b59b6);
+
+	}
+	#n{
+		       background: linear-gradient(135deg, #71b7e6, #9b59b6);
+
+	}
+	.ri{
+     margin-left: 80px;
+     margin-top: 30px;
+     font-size: 20px;
+     color: white;
+	}
+	.mi{
+		margin-left: 40px;
+		font-size: 25px;
+	padding-top: 0.009px;
+	 border-radius: 10px; 
+	padding-bottom: 0.009px;
+	background: linear-gradient(135deg, #71b7e6, #9b59b6);
+
+		text-align: center;
+		color: white;
+	}
+	.di{
+		margin-left: 20px;
+		font-size: 25px;
+		color: white;
+		font-family:cursive;
+	}
+	.a{
+		color: aliceblue;
+	}
+    header {
+      background-color: #f7f7f7;
+      padding: 20px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+    
+    .form-container {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      
+    }
+    
+    .form-container h2 {
+      margin-bottom: 20px;
+    }
+    
+    .form-container label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    .form-container input[type="text"],
+    .form-container select {
+      width: 90%;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 4px;
+    }
+    
+    .form-container button {
+      background-color: orange;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .form-container button:hover {
+      background-color: white;
+      color:black;
+    }
+
+    .a{
+      border: 1px solid orange;
+      border-radius: 5px;
+    }
+    label{
+    color:black;
+    padding :10px;
+    }
+    legend{
+    color:black;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+      
+        <li><a href="enrollment.html">Enrollment</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+  <div class="form-container">
+    <fieldset class="a">
+    <legend><h2>Enrollment Form</h2></legend>
+    <form action="enrollmentdb.jsp" method="POST">
+      <label for="name">Child's Name:</label>
+      <input type="text" id="name" name="name" required><br>
+      
+      <label for="age">Child's Age:</label>
+      <input type="text" id="age" name="age" required><br>
+      
+      <label for="parent">Parent's Name:</label>
+      <input type="text" id="parent" name="parent" required><br>
+      
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required><br>
+      
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" required pattern="^\d{10}$" required title="Please enter a valid 10-digit Contact number"><br>
+      
+      <label for="program">Time Slot:</label>
+      <select id="program" name="program">
+        <option value="8:30 to 6:30">8:30 to 6:30</option>
+        <option value="9:30 to 5:30">9:30 to 5:30</option>
+        <option value="9:30 to 6:00">9:30 to 6:00</option>
+        <option value="9:30 to 11:30">9:30 to 11:30</option>
+        <option value="2:00 to 4:00">2:00 to 4:00</option>
+      </select>
+      <br>
+      <label for="altphone">Alternate Phone Number:</label>
+      <input type="text" id="altphone" name="altphone" required pattern="^\d{10}$" required title="Please enter a valid 10-digit Contact number">
+      
+      <label for="parentoccupation">Parent Occupation:</label>
+      <input type="text" id="parentoccupation" name="parentoccupation" required><br>
+      
+      <label for="disability">Any Disabilities/Disease/Allergy to child:</label>
+      <input type="text" id="disability" name="disability" required><br>
+      
+      <label for="habit">Any specific habit to child:</label>
+      <input type="text" id="habit" name="habit" required><br>
+      
+      <label for="eatinghabit">Any diet/eating habit:</label>
+      <input type="text" id="eatinghabit" name="eatinghabit" required><br>
+      
+      <label for="instructions">Any specific instructions:</label>
+      <input type="text" id="instruction" name="instruction" required><br>
+      
+      <label for="pediatric_name">Pediatric Name:</label>
+      <input type="text" id="pediatric_name" name="pediatric_name" required><br>
+      
+      <label for="pediatric_no">Pediatric Number:</label>
+      <input type="text" id="pediatric_no" name="pediatric_no" required><br>
+      
+       <!--  <label for="add">Address of child:</label>
+      <input type="text" id="add" name="add" required><br>-->
+      <br><button type="submit">Submit</button>
+    </form>
+  </div>
+  </fieldset>
+  
+  <footer>
+    <p>&copy; 2023 ABC Daycare. All rights reserved.</p>
+  </footer>
+</body>
+</html>

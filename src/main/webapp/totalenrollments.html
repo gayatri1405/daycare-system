@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Total Enrollments</title>
+<style>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:visited {
+  color: #666;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #ff6f00;
+}
+.total{
+	margin:auto;
+}
+ @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    
+.tp{
+font-size:50px;
+animation: blink 3s infinite;
+color:red;
+font-weight: bolder
+
+}
+.ek{
+	margin-top:-350px;
+	width:700px;
+	height:500px;
+}
+.total{
+	margin-left:50px;
+	margin-top:150px;
+	
+}
+
+</style>
+</head>
+<body>
+<header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="login.html">Admin</a></li>
+        <li><a href="totalenrollments.html">TotalEnrollment</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        
+      </ul>
+    </nav>
+  </header><div class="total">
+<h1 align="left" style="font-size:40px;margin-left:10px;">Daycare Enrollment</h1>
+  <p align="left" class="tp">Total Students Enrolled: <span id="totalStudents"></span></p>
+
+  <script>
+    // JavaScript code to fetch data from JSP page and display it on the HTML page
+    fetch('totalenrollments.jsp')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('totalStudents').textContent = data;
+      });
+  </script>
+  </div>
+  <div>
+  <img alt="total" src="enrkid.png" class="ek" align="right">
+  </div>
+</body>
+</html>
